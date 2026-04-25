@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-marquee: marquee 25s linear infinite;
+  --animate-marquee2: marquee2 25s linear infinite;
+
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+  }
+  @keyframes marquee2 {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0%); }
+  }
+
+  --font-display: var(--font-display);
+  --font-sans: var(--font-sans);
+
+  --color-brand-primary: var(--brand-primary);
+  --color-brand-secondary: var(--brand-secondary);
+  --color-brand-dark: var(--brand-dark);
+  --color-brand-darker: var(--brand-darker);
+  --color-brand-surface: var(--brand-surface);
+  --color-brand-text: var(--brand-text);
+  --color-brand-text-muted: var(--brand-text-muted);
+}
+
+@layer base {
+  :root {
+    --brand-primary: #6D63F6;
+    --brand-secondary: #4B45BB;
+    --brand-dark: #FFFFFF;
+    --brand-darker: #F8F9FA;
+    --brand-surface: #F1F3F5;
+    --brand-text: #0A0A0F;
+    --brand-text-muted: rgba(10, 10, 15, 0.5);
+    
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(0, 0, 0, 0.05);
+    --glass-glow-bg: rgba(109, 99, 246, 0.05);
+    --glass-glow-border: rgba(109, 99, 246, 0.2);
+  }
+
+  .dark {
+    --brand-primary: #6D63F6;
+    --brand-secondary: #4B45BB;
+    --brand-dark: #0A0A0F;
+    --brand-darker: #050508;
+    --brand-surface: #12121A;
+    --brand-text: #FAFAFA;
+    --brand-text-muted: rgba(250, 250, 250, 0.4);
+
+    --glass-bg: rgba(18, 18, 26, 0.6);
+    --glass-border: rgba(255, 255, 255, 0.05);
+    --glass-glow-bg: rgba(109, 99, 246, 0.03);
+    --glass-glow-border: rgba(109, 99, 246, 0.1);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--brand-dark);
+    color: var(--brand-text);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+}
+
+.glass-glow {
+  background: var(--glass-glow-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-glow-border);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #6D63F6, #A78BFA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
