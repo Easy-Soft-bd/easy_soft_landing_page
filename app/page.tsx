@@ -27,7 +27,6 @@ export default function Home() {
       <Process />
       <Portfolio />
       <TestimonialSlider />
-      <Contact />
       <CTACards />
       <Footer />
     </main>
