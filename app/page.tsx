@@ -8,6 +8,7 @@ import { Infographic } from '@/components/infographic';
 import { ValueProp } from '@/components/value-prop';
 import { Process } from '@/components/process';
 import { Portfolio } from '@/components/portfolio';
+import { GlobalPresence } from '@/components/global-presence';
 import { Contact } from '@/components/contact';
 import { TestimonialSlider } from '@/components/testimonial-slider';
 import { CTACards } from '@/components/cta-cards';
@@ -26,6 +27,7 @@ export default function Home() {
       <ValueProp />
       <Process />
       <Portfolio />
+      <GlobalPresence />
       <TestimonialSlider />
       <CTACards />
       <Footer />
