@@ -108,7 +108,7 @@ export function CTACards() {
                       >
                         <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl px-4 py-3 shadow-2xl shadow-black/30">
                           <div className="w-11 h-11 rounded-xl bg-brand-primary/15 border border-brand-primary/20 flex items-center justify-center text-slate-300">
-                            <Icon size={20} text-slate-300 />
+                            <Icon size={20} />
                           </div>
                           <div>
                             <div className="text-[10px] font-black uppercase tracking-[0.28em] text-white/40">{item.label}</div>
