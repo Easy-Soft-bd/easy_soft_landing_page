@@ -1,4 +1,4 @@
-import type {Metadata} from 'next';
+import type { Metadata } from 'next';
 import { Inter, Space_Grotesk } from 'next/font/google';
 import './globals.css';
 
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 import { BackgroundPattern } from '@/components/ui/background-pattern';
 import { ThemeProvider } from '@/components/theme-provider';
 
-export default function RootLayout({children}: {children: React.ReactNode}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
       lang="en"
@@ -36,6 +36,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
       data-scroll-behavior="smooth"
       suppressHydrationWarning
     >
+      <script src="https://heyo.so/embed/script?projectId=69f7226d129d474cc01026a5"></script>
       <body className="font-sans antialiased text-brand-text bg-brand-dark selection:bg-brand-primary selection:text-white" suppressHydrationWarning>
         <ThemeProvider
           attribute="class"
